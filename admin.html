@@ -373,6 +373,14 @@ input:focus{border-color:var(--accent);background:rgba(62,207,142,0.06)}
             <button class="btn btn-primary btn-sm" id="bg-save-btn" onclick="saveBg()">💾 保存壁纸设置</button>
             <button class="btn btn-ghost btn-sm" onclick="window.open('/','_blank')">↗ 打开导航页查看</button>
           </div>
+          <div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--glass)">
+            <div style="font-size:13px;font-weight:600;margin-bottom:8px">上传本地图片作为壁纸</div>
+            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+              <input type="file" id="bg-file" accept="image/*" style="display:none" onchange="uploadBgImage(this.files[0]);this.value=''">
+              <button class="btn btn-ghost btn-sm" id="bg-up-btn" onclick="document.getElementById('bg-file').click()">⬆ 选图上传并设为壁纸</button>
+              <span style="font-size:11px;color:var(--text3)">图片将存入仓库 icons/logos/ 并自动设为固定壁纸</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -603,6 +611,24 @@ async function saveBg(){
     toast('✅ 壁纸已保存，约 1 分钟后自动上线');
   }catch(e){toast('保存失败：'+e.message,'err',6000);}
   finally{btn.disabled=false;btn.textContent='💾 保存壁纸设置';}
+}
+
+async function uploadBgImage(file){
+  if(!file)return;
+  if(file.size>1024*1024&&!confirm(`图片 ${(file.size/1024/1024).toFixed(1)}MB 较大，继续上传可能拖慢加载，建议先用手机/网页压缩。仍要上传吗？`))return;
+  const btn=document.getElementById('bg-up-btn');btn.disabled=true;btn.textContent='上传中…';
+  try{
+    const name='bg_'+file.name.replace(/[\s'"#?%&]/g,'_');
+    const bytes=new Uint8Array(await file.arrayBuffer());
+    let sha='';try{sha=(await gh(`contents/${ICONS_DIR}/${name}?ref=${BRANCH}`)).sha;}catch{}
+    await putBinary(`${ICONS_DIR}/${name}`,bytes,sha,'upload wallpaper: '+name);
+    let bsha;try{bsha=(await getFile('bg.json')).sha;}catch{}
+    await putFile('bg.json',JSON.stringify({mode:'fixed',url:ICONS_PREFIX+name},null,2),bsha,'set wallpaper via editor');
+    document.querySelector('input[name=bgmode][value=fixed]').checked=true;
+    document.getElementById('bg-url').value=ICONS_PREFIX+name;
+    toast('✅ 壁纸已上传并设置，约 1 分钟后自动上线');
+  }catch(e){toast('上传失败：'+e.message,'err',6000);}
+  finally{btn.disabled=false;btn.textContent='⬆ 选图上传并设为壁纸';}
 }
 
 function renderSidebar(){
