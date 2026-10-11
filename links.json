@@ -1,309 +1,336 @@
 [
   {
-    "section": "常用网站",
+    "section": "AI 大模型",
     "items": [
       {
-        "title": "1Panel",
-        "url": "http://192.168.6.136:31208/3d9c839e5d",
-        "desc": "1Panel 服务器管理面板",
-        "data-desc": "1Panel 192.168.6.136"
-      },
-      {
-        "title": "KataBump",
-        "url": "https://dashboard.katabump.com/auth/login",
-        "desc": "域名",
-        "data-desc": "KataBump dashboard.katabump.com"
-      },
-      {
-        "title": "卡密后台系统",
-        "url": "https://lic.lxxqb.kdns.fr/console",
-        "desc": "翻译器卡密后台管理地址",
-        "data-desc": "卡密后台系统 lic.lxxqb.kdns.fr"
-      },
-      {
-        "title": "哲风壁纸",
-        "url": "https://haowallpaper.com",
-        "desc": "高清壁纸站，桌面/手机壁纸",
-        "data-desc": "哲风壁纸 haowallpaper.com"
-      },
-      {
-        "title": "i8k",
-        "url": "https://i8k.tv",
-        "desc": "i8k.tv 在线影视",
-        "data-desc": "i8k i8k.tv"
-      },
-      {
-        "title": "HStora",
-        "url": "https://hstora.com/zh",
-        "desc": "值得信赖的社交媒体账号、礼品卡和软件密钥交易平台",
-        "data-desc": "HStora hstora.com"
-      },
-      {
-        "title": "青龙",
-        "url": "https://launcher.skn.net.cn",
-        "desc": "青龙键盘设置",
-        "data-desc": "青龙 launcher.skn.net.cn"
-      },
-      {
-        "title": "Fcebook",
-        "url": "https://www.facebook.com",
-        "desc": "全球社交媒体平台，用于社交互动、内容分享、主页管理及广告投放。",
-        "data-desc": "Fcebook www.facebook.com"
-      },
-      {
-        "title": "IP综合检测",
-        "url": "https://chaip.app",
-        "desc": "综合检测当前 IP 的归属地、ASN、代理、风险和纯净度等信息。",
-        "data-desc": "IP综合检测 chaip.app"
-      },
-      {
-        "title": "邮箱购买",
-        "url": "https://ynsx1314.top",
-        "desc": "邮箱账号资源购买平台，用于获取不同类型的邮箱账号。",
-        "data-desc": "邮箱购买 ynsx1314.top"
-      },
-      {
-        "title": "短信接收",
-        "url": "https://hero-sms.com/cn",
-        "desc": "在线短信验证码接收服务，用于接收平台注册及验证短信。",
-        "data-desc": "短信接收 hero-sms.com"
-      },
-      {
-        "title": "tiktok商务",
-        "url": "https://business.tiktok.com/zh",
-        "desc": "TikTok 商业业务入口，用于广告、商务及企业相关功能。",
-        "data-desc": "tiktok商务 business.tiktok.com"
-      },
-      {
-        "title": "2fa",
-        "url": "https://2fa.cn",
-        "desc": "双因素认证工具，用于生成和管理 TOTP 动态验证码。",
-        "data-desc": "2fa 2fa.cn"
-      },
-      {
-        "title": "CM博客",
-        "url": "https://eo.blog.cmliussss.com",
-        "desc": "网络、服务器、代理及跨境相关技术博客/资源分享平台。",
-        "data-desc": "CM博客 eo.blog.cmliussss.com"
-      },
-      {
-        "title": "Gmail",
-        "url": "https://mail.google.com",
-        "desc": "Google 邮箱服务，用于收发邮件及管理 Google 邮箱账户。",
-        "data-desc": "Gmail mail.google.com"
-      },
-      {
-        "title": "恩山论坛",
-        "url": "https://www.right.com.cn/forum/",
-        "desc": "OpenWrt、路由器、网络设备及软路由技术交流社区。",
-        "data-desc": "恩山论坛 www.right.com.cn"
-      },
-      {
-        "title": "007出海",
-        "url": "https://007hi.com",
-        "desc": "海外业务及出海资源平台，提供跨境业务相关工具和资讯。",
-        "data-desc": "007出海 007hi.com"
-      },
-      {
-        "title": "解析视频",
-        "url": "https://dy.kukutool.com",
-        "desc": "视频解析工具，用于解析部分在线视频地址和媒体资源。",
-        "data-desc": "解析视频 dy.kukutool.com"
-      },
-      {
-        "title": "GitHub",
-        "url": "https://github.com",
-        "desc": "全球代码托管与开源项目平台，用于代码、项目和开发资源管理。",
-        "data-desc": "GitHub github.com"
-      },
-      {
-        "title": "IP纯净度",
-        "url": "https://ping0.cc",
-        "desc": "检测当前 IP 的质量、信誉度、风险程度及是否存在污染。",
-        "data-desc": "IP纯净度 ping0.cc"
-      },
-      {
-        "title": "老虎接码",
-        "url": "https://tiger-sms.com/cn/cabinet/sms",
-        "desc": "短信验证码接收服务，用于注册和验证海外平台账号。",
-        "data-desc": "老虎接码 tiger-sms.com"
-      },
-      {
-        "title": "海王出海",
-        "url": "https://www.haiwangweb.com",
-        "desc": "出海业务相关资源平台，提供海外网络、账号及跨境工具信息。",
-        "data-desc": "海王出海 www.haiwangweb.com"
-      },
-      {
-        "title": "谷歌账号购买",
-        "url": "https://gmailbuy.com",
-        "desc": "Google 账号相关的购买及账号资源服务平台。",
-        "data-desc": "谷歌账号购买 gmailbuy.com"
-      },
-      {
-        "title": "跨境大玩家",
-        "url": "https://tkapp.net?cid=202",
-        "desc": "跨境电商及海外业务相关资讯、工具和经验交流平台。",
-        "data-desc": "跨境大玩家 tkapp.net"
-      },
-      {
-        "title": "TradingView",
-        "url": "https://cn.tradingview.com/markets/",
-        "desc": "专业行情与技术分析平台，支持股票、外汇、加密货币等市场。",
-        "data-desc": "TradingView cn.tradingview.com"
-      },
-      {
-        "title": "YouTube",
-        "url": "https://www.youtube.com",
-        "desc": "全球在线视频平台，用于视频观看、频道管理和内容搜索。",
-        "data-desc": "YouTube www.youtube.com"
-      },
-      {
-        "title": "IP分流监控",
-        "url": "https://ip.net.coffee",
-        "desc": "查看和监控不同网络出口、代理线路及 IP 分流情况。",
-        "data-desc": "IP分流监控 ip.net.coffee"
-      }
-    ]
-  },
-  {
-    "section": "AI",
-    "items": [
-      {
-        "title": "LightVela",
-        "url": "https://lightvela.ai/zh-sg/",
-        "desc": "个人云端AI",
-        "data-desc": "LightVela lightvela.ai"
-      },
-      {
-        "title": "智谱开放平台",
-        "url": "https://bigmodel.cn",
-        "desc": "智谱 AI 开放平台，用于调用大模型 API、开发 AI 应用及管理模型服务。",
-        "data-desc": "智谱开放平台 bigmodel.cn"
-      },
-      {
-        "title": "Deepseek",
-        "url": "https://www.deepseek.com",
-        "desc": "DeepSeek AI 平台，提供大语言模型、推理、编程和智能问答能力。",
-        "data-desc": "Deepseek www.deepseek.com"
-      },
-      {
-        "title": "千问",
-        "url": "https://www.qianwen.com",
-        "desc": "阿里云通义千问 AI 平台，支持对话、写作、代码和内容生成。",
-        "data-desc": "千问 www.qianwen.com"
-      },
-      {
-        "title": "豆包",
-        "url": "https://www.doubao.com",
-        "desc": "字节跳动推出的 AI 助手，支持聊天、写作、图片及多种 AI 功能。",
-        "data-desc": "豆包 www.doubao.com"
-      },
-      {
-        "title": "Grok",
-        "url": "https://grok.com",
-        "desc": "xAI 的 AI 助手，提供实时信息问答、分析、写作等 AI 功能。",
-        "data-desc": "Grok grok.com"
+        "title": "ChatGPT",
+        "url": "https://chatgpt.com",
+        "desc": "OpenAI 助手",
+        "data-desc": "ChatGPT"
       },
       {
         "title": "Gemini",
         "url": "https://gemini.google.com/app",
-        "desc": "Google 的 AI 助手，支持问答、搜索、文本处理及多模态 AI 能力。",
-        "data-desc": "Gemini gemini.google.com"
+        "desc": "谷歌 AI 助手",
+        "data-desc": "Gemini"
       },
       {
-        "title": "ChatGPT",
-        "url": "https://chatgpt.com",
-        "desc": "OpenAI 的 AI 助手，可用于问答、写作、编程、分析和多种 AI 任务。",
-        "data-desc": "ChatGPT chatgpt.com"
+        "title": "Grok",
+        "url": "https://grok.com",
+        "desc": "xAI 助手",
+        "data-desc": "Grok"
+      },
+      {
+        "title": "DeepSeek",
+        "url": "https://www.deepseek.com",
+        "desc": "国产推理模型",
+        "data-desc": "DeepSeek"
+      },
+      {
+        "title": "通义千问",
+        "url": "https://www.qianwen.com",
+        "desc": "阿里 AI 助手",
+        "data-desc": "通义千问"
+      },
+      {
+        "title": "豆包",
+        "url": "https://www.doubao.com",
+        "desc": "字节 AI 助手",
+        "data-desc": "豆包"
+      },
+      {
+        "title": "智谱开放平台",
+        "url": "https://bigmodel.cn",
+        "desc": "大模型 API",
+        "data-desc": "智谱开放平台"
+      },
+      {
+        "title": "LightVela",
+        "url": "https://lightvela.ai/zh-sg/",
+        "desc": "云端 AI 工作站",
+        "data-desc": "LightVela"
       }
     ]
   },
   {
-    "section": "内网地址",
+    "section": "机场代理",
     "items": [
-      {
-        "title": "open-box",
-        "url": "http://192.168.6.1:2026",
-        "desc": "内网 open-box 服务",
-        "data-desc": "open-box 192.168.6.1"
-      },
-      {
-        "title": "路由器",
-        "url": "http://192.168.6.1",
-        "desc": "路由器管理后台，用于网络、代理、DHCP、防火墙等配置",
-        "data-desc": "路由器 192.168.6.1"
-      },
-      {
-        "title": "NapCat",
-        "url": "http://192.168.6.245:6099/webui/",
-        "desc": "NapCat 管理入口，用于管理和配置基于 NTQQ 的机器人服务。",
-        "data-desc": "NapCat 192.168.6.245"
-      },
-      {
-        "title": "飞牛NAS",
-        "url": "http://192.168.6.245:5666",
-        "desc": "飞牛 NAS 管理后台，用于文件存储、管理和家庭私有云服务。",
-        "data-desc": "飞牛NAS 192.168.6.245"
-      }
-    ]
-  },
-  {
-    "section": "国内外代理",
-    "items": [
-      {
-        "title": "Cloudflare EDT 导航",
-        "url": "https://bestcf.pages.dev",
-        "desc": "各类CF技术汇总导航",
-        "data-desc": "Cloudflare EDT 导航 bestcf.pages.dev"
-      },
-      {
-        "title": "CloudFlare 优选域名",
-        "url": "https://cf.090227.xyz",
-        "desc": "提供优质的CloudFlare CDN节点信息，改善访问体验",
-        "data-desc": "CloudFlare 优选域名 cf.090227.xyz"
-      },
       {
         "title": "悦",
         "url": "https://yue.to",
         "desc": "机场购买",
-        "data-desc": "悦 yue.to"
+        "data-desc": "悦"
       },
       {
         "title": "良心云",
         "url": "https://xn--9kqz23b19z.com#/login",
         "desc": "机场购买",
-        "data-desc": "良心云 xn--9kqz23b19z.com"
+        "data-desc": "良心云"
       },
       {
-        "title": "Cloudflare订阅地址",
-        "url": "https://qb.qbqifei.kdns.fr/admin",
-        "desc": "Cloudflare 相关订阅地址，用于代理节点、网络线路或配置订阅。",
-        "data-desc": "Cloudflare订阅地址 qb.qbqifei.kdns.fr"
-      },
-      {
-        "title": "rabbitgo",
+        "title": "RabbitGo",
         "url": "https://rabbitgo.pro/user#",
         "desc": "机场购买",
-        "data-desc": "rabbitgo rabbitgo.pro"
+        "data-desc": "RabbitGo"
+      },
+      {
+        "title": "CF 订阅",
+        "url": "https://qb.qbqifei.kdns.fr/admin",
+        "desc": "订阅管理后台",
+        "data-desc": "CF 订阅"
+      },
+      {
+        "title": "CF 优选域名",
+        "url": "https://cf.090227.xyz",
+        "desc": "节点测速优选",
+        "data-desc": "CF 优选域名"
+      },
+      {
+        "title": "CF 技术导航",
+        "url": "https://bestcf.pages.dev",
+        "desc": "CF 资源汇总",
+        "data-desc": "CF 技术导航"
       },
       {
         "title": "无双代理",
         "url": "https://new.6nn.net/admin#/login?redirect=/apply/myBase",
-        "desc": "代理 IP 服务平台，用于获取和管理海外代理线路。",
-        "data-desc": "无双代理 new.6nn.net"
+        "desc": "代理 IP 平台",
+        "data-desc": "无双代理"
       },
       {
         "title": "IPBurger",
         "url": "https://www.ipburger.com",
-        "desc": "IP 与代理服务平台，提供代理 IP、IP 检测等相关服务。",
-        "data-desc": "IPBurger www.ipburger.com"
+        "desc": "代理 IP 服务",
+        "data-desc": "IPBurger"
       },
       {
-        "title": "PraxyIPv4",
+        "title": "ProxyIPv4",
         "url": "https://proxy-ipv4.com/en/",
-        "desc": "IPv4 代理服务，用于获取和管理独立 IPv4 代理 IP。",
-        "data-desc": "PraxyIPv4 proxy-ipv4.com"
+        "desc": "IPv4 代理",
+        "data-desc": "ProxyIPv4"
+      }
+    ]
+  },
+  {
+    "section": "IP 工具",
+    "items": [
+      {
+        "title": "IP 检测",
+        "url": "https://chaip.app",
+        "desc": "归属与风险",
+        "data-desc": "IP 检测"
+      },
+      {
+        "title": "IP 纯净度",
+        "url": "https://ping0.cc",
+        "desc": "IP 信誉查询",
+        "data-desc": "IP 纯净度"
+      },
+      {
+        "title": "分流监控",
+        "url": "https://ip.net.coffee",
+        "desc": "出口分流查看",
+        "data-desc": "分流监控"
+      }
+    ]
+  },
+  {
+    "section": "出海业务",
+    "items": [
+      {
+        "title": "海王出海",
+        "url": "https://www.haiwangweb.com",
+        "desc": "出海资源",
+        "data-desc": "海王出海"
+      },
+      {
+        "title": "007出海",
+        "url": "https://007hi.com",
+        "desc": "出海资源",
+        "data-desc": "007出海"
+      },
+      {
+        "title": "跨境大玩家",
+        "url": "https://tkapp.net?cid=202",
+        "desc": "跨境电商资讯",
+        "data-desc": "跨境大玩家"
+      },
+      {
+        "title": "TikTok 商务",
+        "url": "https://business.tiktok.com/zh",
+        "desc": "广告投放",
+        "data-desc": "TikTok 商务"
+      },
+      {
+        "title": "HStora",
+        "url": "https://hstora.com/zh",
+        "desc": "卡密账号交易",
+        "data-desc": "HStora"
+      },
+      {
+        "title": "TradingView",
+        "url": "https://cn.tradingview.com/markets/",
+        "desc": "行情分析",
+        "data-desc": "TradingView"
+      }
+    ]
+  },
+  {
+    "section": "账号接码",
+    "items": [
+      {
+        "title": "Gmail",
+        "url": "https://mail.google.com",
+        "desc": "谷歌邮箱",
+        "data-desc": "Gmail"
+      },
+      {
+        "title": "邮箱购买",
+        "url": "https://ynsx1314.top",
+        "desc": "邮箱货源",
+        "data-desc": "邮箱购买"
+      },
+      {
+        "title": "谷歌账号",
+        "url": "https://gmailbuy.com",
+        "desc": "Google 账号货源",
+        "data-desc": "谷歌账号"
+      },
+      {
+        "title": "Hero-SMS",
+        "url": "https://hero-sms.com/cn",
+        "desc": "短信接码",
+        "data-desc": "Hero-SMS"
+      },
+      {
+        "title": "老虎接码",
+        "url": "https://tiger-sms.com/cn/cabinet/sms",
+        "desc": "海外短信接码",
+        "data-desc": "老虎接码"
+      },
+      {
+        "title": "2FA",
+        "url": "https://2fa.cn",
+        "desc": "两步验证",
+        "data-desc": "2FA"
+      },
+      {
+        "title": "卡密后台",
+        "url": "https://lic.lxxqb.kdns.fr/console",
+        "desc": "卡密管理",
+        "data-desc": "卡密后台"
+      }
+    ]
+  },
+  {
+    "section": "影音社交",
+    "items": [
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com",
+        "desc": "视频平台",
+        "data-desc": "YouTube"
+      },
+      {
+        "title": "i8k",
+        "url": "https://i8k.tv",
+        "desc": "在线影视",
+        "data-desc": "i8k"
+      },
+      {
+        "title": "哲风壁纸",
+        "url": "https://haowallpaper.com",
+        "desc": "高清壁纸",
+        "data-desc": "哲风壁纸"
+      },
+      {
+        "title": "视频解析",
+        "url": "https://dy.kukutool.com",
+        "desc": "短视频解析",
+        "data-desc": "视频解析"
+      },
+      {
+        "title": "Facebook",
+        "url": "https://www.facebook.com",
+        "desc": "海外社交",
+        "data-desc": "Facebook"
+      }
+    ]
+  },
+  {
+    "section": "开发社区",
+    "items": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com",
+        "desc": "代码托管",
+        "data-desc": "GitHub"
+      },
+      {
+        "title": "恩山论坛",
+        "url": "https://www.right.com.cn/forum/",
+        "desc": "路由固件社区",
+        "data-desc": "恩山论坛"
+      },
+      {
+        "title": "CM博客",
+        "url": "https://eo.blog.cmliussss.com",
+        "desc": "跨境技术博客",
+        "data-desc": "CM博客"
+      }
+    ]
+  },
+  {
+    "section": "内网服务",
+    "items": [
+      {
+        "title": "open-box",
+        "url": "http://192.168.6.1:2026",
+        "desc": "内网服务",
+        "data-desc": "open-box",
+        "icon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%23ff9900%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22Microsoft%20YaHei%2CArial%22%3E%E7%9B%92%3C%2Ftext%3E%3C%2Fsvg%3E"
+      },
+      {
+        "title": "1Panel",
+        "url": "http://192.168.6.136:31208/3d9c839e5d",
+        "desc": "服务器面板",
+        "data-desc": "1Panel",
+        "icon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%2300a870%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22Microsoft%20YaHei%2CArial%22%3EP%3C%2Ftext%3E%3C%2Fsvg%3E"
+      },
+      {
+        "title": "路由器",
+        "url": "http://192.168.6.1",
+        "desc": "OpenWrt 后台",
+        "data-desc": "路由器",
+        "icon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%232d8cf0%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22Microsoft%20YaHei%2CArial%22%3E%E8%B7%AF%3C%2Ftext%3E%3C%2Fsvg%3E"
+      },
+      {
+        "title": "飞牛NAS",
+        "url": "http://192.168.6.245:5666",
+        "desc": "NAS 管理",
+        "data-desc": "飞牛NAS",
+        "icon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%2319be6b%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22Microsoft%20YaHei%2CArial%22%3E%E7%89%9B%3C%2Ftext%3E%3C%2Fsvg%3E"
+      },
+      {
+        "title": "NapCat",
+        "url": "http://192.168.6.245:6099/webui/",
+        "desc": "QQ 机器人",
+        "data-desc": "NapCat",
+        "icon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%237b5ecf%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22Microsoft%20YaHei%2CArial%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E"
+      },
+      {
+        "title": "KataBump",
+        "url": "https://dashboard.katabump.com/auth/login",
+        "desc": "免费云主机",
+        "data-desc": "KataBump",
+        "icon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%23e8433e%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22Microsoft%20YaHei%2CArial%22%3EK%3C%2Ftext%3E%3C%2Fsvg%3E"
+      },
+      {
+        "title": "青龙",
+        "url": "https://launcher.skn.net.cn",
+        "desc": "青龙面板",
+        "data-desc": "青龙",
+        "icon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%232c7be5%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22Microsoft%20YaHei%2CArial%22%3E%E9%BE%99%3C%2Ftext%3E%3C%2Fsvg%3E"
       }
     ]
   }
