@@ -538,9 +538,22 @@ function bindTouchTooltip() {
 }
 
 /* ── 随机背景 ── */
-function changeBackground() {
-  const url = `${BG_API}${Date.now()}`;
-  document.getElementById('bgLayer').style.backgroundImage = `url('${url}')`;
+let bgCfg = { mode: 'bing' };
+function applyBg() {
+  const el = document.getElementById('bgLayer');
+  if (!el) return;
+  let url;
+  if (bgCfg.mode === 'fixed' && bgCfg.url) url = bgCfg.url;
+  else if (bgCfg.mode === 'api' && bgCfg.url)
+    url = `${bgCfg.url}${bgCfg.url.includes('?') ? '&' : '?'}t=${Date.now()}`;
+  else url = `${BG_API}${Date.now()}`;
+  el.style.backgroundImage = `url('${url}')`;
+}
+function loadBgConfig() {
+  fetch('bg.json', { cache: 'no-store' })
+    .then(r => r.ok ? r.json() : null)
+    .then(c => { if (c && c.mode) bgCfg = c; applyBg(); })
+    .catch(applyBg);
 }
 
 /* ===========================
@@ -709,7 +722,7 @@ function toggleLayoutTheme() {
 
 /* ── 入口 ── */
 document.addEventListener('DOMContentLoaded', async () => {
-  changeBackground();
+  loadBgConfig();
 
   // 尽早应用一次布局主题的 body class（不依赖数据）
   setLayoutThemeClass();

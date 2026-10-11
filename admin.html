@@ -208,6 +208,7 @@ input:focus{border-color:var(--accent);background:rgba(62,207,142,0.06)}
 .upload-mini small{color:var(--text3);font-size:11px}
 
 #icons-panel{display:none}
+#bg-panel{display:none}
 .icons-mgr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:12px;margin-top:16px}
 .icon-card{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 8px;background:var(--glass);border:1px solid var(--border);border-radius:var(--radius-sm);position:relative;transition:all .15s}
 .icon-card:hover{background:var(--glass-hover);border-color:var(--border2)}
@@ -314,6 +315,7 @@ input:focus{border-color:var(--accent);background:rgba(62,207,142,0.06)}
       <span id="dirty-st" style="font-size:12px"></span>
       <button class="btn btn-ghost btn-sm" onclick="showPanel('icons')" title="图标管理">🖼 <span class="pc-label">图标管理</span></button>
       <button class="btn btn-ghost btn-sm" onclick="showPanel('links')" title="链接编辑">🔗 <span class="pc-label">链接编辑</span></button>
+      <button class="btn btn-ghost btn-sm" onclick="showPanel('bg')" title="壁纸设置">🎨 <span class="pc-label">壁纸</span></button>
       <button class="btn btn-primary btn-sm" id="save-btn" onclick="saveAll()">💾 保存到 GitHub</button>
       <button class="btn btn-ghost btn-sm" onclick="doLogout()">退出</button>
       <button class="btn btn-danger btn-sm" onclick="doClearLogout()" title="退出并清除本地存储">🗑 清除</button>
@@ -355,6 +357,23 @@ input:focus{border-color:var(--accent);background:rgba(62,207,142,0.06)}
           <div class="progress"><div class="progress-bar" id="prog-bar" style="width:0"></div></div>
         </div>
         <div class="icons-mgr-grid" id="icons-grid"><div class="empty"><span class="spinner"></span>加载中…</div></div>
+      </div>
+      <div id="bg-panel">
+        <div style="max-width:600px">
+          <h2 style="font-size:16px;font-weight:700;margin-bottom:4px">壁纸设置</h2>
+          <p style="font-size:12px;color:var(--text3);margin-bottom:16px">保存到仓库 <code style="background:var(--glass);padding:1px 6px;border-radius:4px">bg.json</code>，约 1 分钟自动部署生效</p>
+          <label style="display:flex;align-items:center;gap:8px;margin-bottom:10px;cursor:pointer"><input type="radio" name="bgmode" value="bing" checked>Bing 每日一图（推荐，每天自动更换）</label>
+          <label style="display:flex;align-items:center;gap:8px;margin-bottom:10px;cursor:pointer"><input type="radio" name="bgmode" value="fixed">固定图片（填图片直链）</label>
+          <label style="display:flex;align-items:center;gap:8px;margin-bottom:10px;cursor:pointer"><input type="radio" name="bgmode" value="api">随机图片 API（每次刷新换一张）</label>
+          <div style="margin:14px 0">
+            <input type="url" id="bg-url" style="width:100%" placeholder="https://... 图片或 API 地址（选 Bing 模式可不填）"/>
+            <div style="font-size:11px;color:var(--text3);margin-top:6px">随机 API 示例：https://bing.biturl.top/?resolution=UHD&amp;format=image&amp;index=random</div>
+          </div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-primary btn-sm" id="bg-save-btn" onclick="saveBg()">💾 保存壁纸设置</button>
+            <button class="btn btn-ghost btn-sm" onclick="window.open('/','_blank')">↗ 打开导航页查看</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -557,8 +576,33 @@ async function loadIcons(){
 function showPanel(p){
   document.getElementById('links-panel').style.display=p==='links'?'block':'none';
   document.getElementById('icons-panel').style.display=p==='icons'?'block':'none';
+  document.getElementById('bg-panel').style.display=p==='bg'?'block':'none';
   document.getElementById('sidebar').style.display=p==='links'?'flex':'none';
   if(p==='icons')renderIconsGrid();
+  if(p==='bg')loadBg();
+}
+
+async function loadBg(){
+  try{
+    const{content}=await getFile('bg.json');
+    const c=JSON.parse(content);
+    const r=document.querySelector(`input[name=bgmode][value="${c.mode||'bing'}"]`);
+    if(r)r.checked=true;
+    document.getElementById('bg-url').value=c.url||'';
+  }catch(e){/* bg.json 不存在时用默认值 */}
+}
+
+async function saveBg(){
+  const mode=document.querySelector('input[name=bgmode]:checked').value;
+  const url=document.getElementById('bg-url').value.trim();
+  if(mode!=='bing'&&!url){toast('请填写图片或 API 地址','err');return;}
+  const btn=document.getElementById('bg-save-btn');btn.disabled=true;btn.textContent='保存中…';
+  try{
+    let sha;try{sha=(await getFile('bg.json')).sha;}catch(e){}
+    await putFile('bg.json',JSON.stringify(mode==='bing'?{mode}:{mode,url},null,2),sha,'update bg.json via editor');
+    toast('✅ 壁纸已保存，约 1 分钟后自动上线');
+  }catch(e){toast('保存失败：'+e.message,'err',6000);}
+  finally{btn.disabled=false;btn.textContent='💾 保存壁纸设置';}
 }
 
 function renderSidebar(){
