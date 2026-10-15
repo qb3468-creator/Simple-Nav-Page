@@ -172,6 +172,12 @@
         "url": "https://cn.tradingview.com/markets/",
         "desc": "行情分析",
         "data-desc": "TradingView"
+      },
+      {
+        "title": "bitrefill",
+        "url": "https://www.bitrefill.com/",
+        "desc": "礼品卡购买",
+        "data-desc": "礼品卡"
       }
     ]
   },
