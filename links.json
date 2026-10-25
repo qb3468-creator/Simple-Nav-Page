@@ -184,6 +184,12 @@
         "url": "https://www.bitrefill.com/",
         "desc": "礼品卡购买",
         "data-desc": "礼品卡"
+      },
+      {
+        "title": "华润赢",
+        "url": "https://huarun.win/",
+        "desc": "翻墙应用商店",
+        "data-desc": "翻墙"
       }
     ]
   },
