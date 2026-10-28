@@ -114,6 +114,12 @@
         "url": "https://proxy-ipv4.com/en/",
         "desc": "IPv4 代理",
         "data-desc": "ProxyIPv4"
+      },
+      {
+        "title": "CF NEXT",
+        "url": "https://lxx08910.kdns.fr/a6f9b6a3e1",
+        "desc": "CF订阅管理后台",
+        "data-desc": "CF"
       }
     ]
   },
