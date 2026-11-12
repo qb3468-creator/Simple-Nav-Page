@@ -278,6 +278,12 @@
         "url": "https://www.facebook.com",
         "desc": "海外社交",
         "data-desc": "Facebook"
+      },
+      {
+        "title": "蘑菇屋游戏",
+        "url": "https://www.mmsoso.com/",
+        "desc": "游戏大全",
+        "data-desc": "游戏"
       }
     ]
   },
